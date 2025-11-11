@@ -7,7 +7,9 @@ function setup() {
 
 function draw() {
   background(51);
-  if (frameCount % 10 == 0)
+  system.setPostion(createVector(mouseX, mouseY));
+  
+  if (mouseIsPressed)
     system.addParticle(); 
   
   system.run();
