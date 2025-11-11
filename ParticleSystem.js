@@ -23,6 +23,11 @@ class ParticleSystem {
             }
         }
     }
+
+    display() {
+        fill(255);
+        rect(this.origin.x, this.origin.y, 2, 50);
+    }
 }
 
 
