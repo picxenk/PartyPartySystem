@@ -7,7 +7,9 @@ function setup() {
 
 function draw() {
   background(51);
-  system.addParticle();
+  if (frameCount % 10 == 0)
+    system.addParticle(); 
+  
   system.run();
 }
 
